@@ -87,3 +87,27 @@ console.log(typeof heros);
 // typescript is a language. It is a server side programming language.
 // rust is a language. It is a server side programming language.
 // deno is a language. It is a server side programming language.
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack (Primitive), Heap (Non Primitive)
+
+let myYoutubename = "jahidulislam";
+let anothername = myYoutubename;
+anothername = "grocoder";
+console.log(anothername);
+console.log(myYoutubename);
+
+let userOne = {
+    email: "user@name.com",
+    upi: "jahidul@gmail",
+    password: "123456",
+    address: "laksham",
+    city: "laksham",
+}
+
+let userTwo = userOne;
+userTwo.email = "sobuz@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
