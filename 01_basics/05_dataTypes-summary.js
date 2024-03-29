@@ -62,6 +62,8 @@ console.log(typeof heros);
 
 
 
+
+
 // css is not a language. It is a style sheet.
 // html is not a language. It is a markup language.
 // JavaScript is a language. it is a programming language.
