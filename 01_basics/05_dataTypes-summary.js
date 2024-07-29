@@ -14,6 +14,30 @@
 // const isLoggedIn = false; // boolean
 // const outsideTemp = null; // object
 // let userEmail; // undefined
+// const score = 120; // number
+// console.log(typeof score);
+// console.log(score);
+// console.log("\n");
+
+// const scoreValue = 120.5; // number
+// console.log(typeof scoreValue);
+// console.log(scoreValue);
+// console.log("\n");
+
+// const isLoggedIn = true; // boolean
+// console.log(typeof isLoggedIn);
+// console.log(isLoggedIn);
+// console.log("\n");
+
+// const outsideTemp = null // object
+// console.log(typeof outsideTemp);
+// console.log(outsideTemp);
+// console.log("\n");
+
+// let userEmail; // undefined
+// console.log(typeof userEmail);
+// console.log(userEmail);
+// console.log("\n");
 
 // dataType symbol is unique. This two symbol value is not equal. 
 // const id = Symbol('123'); // symbol
@@ -35,29 +59,54 @@
 // 03. array
 
 // dataType object
-let user = {
-    name: "jahidul islam",
-    age: 26,
-    address: "laksham",
-    isMarried: false,
-    isaCometead: true,
-    girlfrindsName: ["Rimi", "Choity", "Salma", "Sowon"],
-    exGrilfrindsName: "Priya",
-}
+// let user = {
+//     name: "jahidul islam",
+//     age: 26,
+//     address: "laksham",
+//     isMarried: false,
+//     isaCometead: true,
+//     girlfrindsName: ["Rimi", "Choity", "Salma", "Sowon"],
+//     exGrilfrindsName: "Priya",
+// }
+
+// let user = {
+//     name: "jahidul islam",
+//     age: 26,
+//     address: "Laksham",
+//     isMarried: false,
+//     isaCometead: true,
+//     girlfrindsName: ['Rimi', 'Choity', 'Salma', 'Sowon'],
+//     exGrilfrindsName: ['Priya', 'Min', 'Bonna', 'Bristy', "Akhi", 'Nishat', 'Suborna', 'Munni'],
+// }
+// console.log(typeof user);
+// console.log(user);
 
 // dataType function
-let myfunction = function(){
-    console.log("jahidul islam");
-}
+// let myfunction = function(){
+//     console.log("jahidul islam");
+// }
 
-myfunction();
+// myfunction();
+
+// function myfunction(){
+//     console.log("jahidul islam");
+// }
+// myfunction();
+
+// function myfunction(a, b) {
+//     console.log(a * b);
+// }
+// myfunction(2, 3);
 
 // dataType array
-const heros = ['marvel', 'ironman', 'superman']; // array
+// const heros = ['marvel', 'ironman', 'superman']; // array
 
-console.log(typeof user);
-console.log(typeof myfunction);
-console.log(typeof heros);
+// const heros = ['marvel', 'ironman', 'superman']; // array
+// console.log(typeof heros);
+
+// console.log(typeof user);
+// console.log(typeof myfunction);
+// console.log(typeof heros);
 
 
 
@@ -92,22 +141,40 @@ console.log(typeof heros);
 // +++++++++++++++++++++++++++++++++++++++++++++++++++
 // Stack (Primitive), Heap (Non Primitive)
 
-let myYoutubename = "jahidulislam";
-let anothername = myYoutubename;
-anothername = "grocoder";
-console.log(anothername);
-console.log(myYoutubename);
+// let myYoutubename = "jahidulislam";
+// let anothername = myYoutubename;
+// anothername = "grocoder";
+// console.log(anothername);
+// console.log(myYoutubename);
 
-let userOne = {
-    email: "user@name.com",
-    upi: "jahidul@gmail",
-    password: "123456",
-    address: "laksham",
-    city: "laksham",
-}
+// let userOne = {
+//     email: "user@name.com",
+//     upi: "jahidul@gmail",
+//     password: "123456",
+//     address: "laksham",
+//     city: "laksham",
+// }
 
-let userTwo = userOne;
-userTwo.email = "sobuz@gmail.com"
+// let userTwo = userOne;
+// userTwo.email = "sobuz@gmail.com"
 
-console.log(userOne);
-console.log(userTwo);
+// console.log(userOne);
+// console.log(userTwo);
+
+// let myFacebookname = "jahidulislam";
+// let anothername = myFacebookname;
+// anothername = "grocoder";
+// console.log(anothername);
+// console.log(myFacebookname);
+
+// let userOne = {
+//     email: "user@name.com",
+//     upi: "jahidul@gmail",
+//     password: "123456",
+//     address: "laksham",
+//     city: "laksham",
+// }
+// let userTwo = userOne;
+// userTwo.email = "sobuz@gmail.com";
+// console.log(userOne);
+// console.log(userTwo);
