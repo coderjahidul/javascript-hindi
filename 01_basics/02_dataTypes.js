@@ -23,3 +23,11 @@ let isLoggedIn = false // boolean data types
 // object
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
+console.log(typeof 2); // number
+console.log(typeof "jahidul"); // string
+console.log(typeof true); // boolean
+console.log(typeof {"name":"jahidul"}); // object
+console.log(typeof Symbol("123")); // symbol
+console.log(typeof BigInt("2324154496545")); // bigint
+console.log(typeof undefined); // undefined
+console.log(typeof null); // object
