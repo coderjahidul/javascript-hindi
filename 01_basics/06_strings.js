@@ -72,7 +72,6 @@
 
 // const strPrim3 = String(true);
 // console.log(typeof strPrim3); // "string"
-
 // const strObj = new String(strPrim);
 // console.log(typeof strObj); // "object"
 
