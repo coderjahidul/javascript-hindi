@@ -80,20 +80,36 @@
 
 
 // Create JavaScript Object
-const person = {
-    firstName: "Jahidul Islam",
-    lastName: "Sabuz",
-    age: 26,
-    location: "Uttora, Dhaka",
-    email: "jahidul@imjol.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Sunday", "Friday"],
-    fullName: function(){
-        return this.fristName + " " + this.lastName;
-    }
+// const person = {
+//     firstName: "Jahidul Islam",
+//     lastName: "Sabuz",
+//     age: 26,
+//     location: "Uttora, Dhaka",
+//     email: "jahidul@imjol.com",
+//     isLoggedIn: false,
+//     lastLoginDays: ["Monday", "Sunday", "Friday"],
+//     fullName: function(){
+//         return this.fristName + " " + this.lastName;
+//     }
+// }
+// const x = person;
+// x.age = 27;
+// console.log(person);
+
+const course = {
+    coursename: "Javascript",
+    price: 500,
+    isPaid: true,
+    courseInstructor: "Jahidul Islam"
 }
-const x = person;
-x.age = 27;
-console.log(person);
 
+// console.log(course.courseInstructor);
+// console.log(course["courseInstructor"]);
 
+// Object Destructuring
+const {courseInstructor} = course; // Return the value Jahidul Islam
+const {courseInstructor: instructor} = course; // Return the value Jahidul Islam
+const {price} = course; // Return the value 500
+
+console.log(instructor);
+console.log(price);
