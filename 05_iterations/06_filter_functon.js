@@ -60,10 +60,15 @@ console.log(userBook4);
 const userBook5 = books.filter((books) => books.publish > 2000);
 console.log(userBook5);
 
-// filter function publish date <= 2000
+// filter function publish date > 2000 && genre === "Fiction"
 const userBook6 = books.filter((books) => {
     return books.publish <= 2000 && books.genre === "Fiction";
 });
 console.log(userBook6);
 
 
+// filter function publish date > 2000 && genre === "Non-Fiction" && edition > 2000
+const userBook7 = books.filter((books) => {
+    return books.publish <= 2000 && books.genre === "Non-Fiction" && books.edition > 2000;
+});
+console.log(userBook7);
