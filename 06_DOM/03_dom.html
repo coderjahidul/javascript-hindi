@@ -39,6 +39,26 @@
     div2.innerHTML = "Im Programmer";
     document.body.appendChild(div2);
 
+    const div3 = document.createElement("div");
+    console.log(div3);
+    div3.className = 'main3';
+    div3.id = Math.round(Math.random() * 10 + 4);
+    div3.setAttribute('title', 'Im a web developer');
+    div3.style.color = '#000';
+    div3.style.backgroundColor = 'orange';
+    div3.style.padding = '20px';
+    div3.style.textAlign = 'center';
+    div3.style.fontSize = '20px';
+    div3.style.fontWeight = 'bold';
+    div3.style.marginTop = '10px';
+    div3.style.borderRadius = '5px';
+    // div3.innerHTML = "Im a web developer";
+    const addText2 = document.createTextNode('Im a web developer');
+    div3.appendChild(addText2);
+    document.body.appendChild(div3);
+
+
+
 
     
 </script>
