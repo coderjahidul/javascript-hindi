@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Event Propagation</title>
+</head>
+<body>
+  <div id="parent" style="padding: 20px; background: lightblue;">
+    Parent
+    <div id="child" style="padding: 20px; background: lightgreen;">
+      Child
+      <div id="grand-child" style="padding: 20px; background: lightcoral;">
+        Grand Child
+      </div>
+    </div>
+  </div>
+  <script>
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+    const grandChild = document.getElementById('grand-child');
+    // Bubbling Event
+    parent.addEventListener('click', (e) => {
+        alert('Parent Clicked');
+    });
+
+    child.addEventListener('click', (e) => {
+        alert('Child Clicked');
+    });
+
+    grandChild.addEventListener('click', (e) => {
+        alert('Grand Child Clicked');
+    });
+
+    // Capturing Event
+    parent.addEventListener('click', (e) => {
+        alert('Parent Clicked');
+    }, true);
+
+    child.addEventListener('click', (e)=>{
+        alert('Child Clicked');
+    }, true);
+
+    grandChild.addEventListener('click', (e)=>{
+        alert('Grand Child Clicked');
+    }, true);
+
+
+  </script>
+</body>
+</html>

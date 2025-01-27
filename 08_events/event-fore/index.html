@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mouse Events</title>
+</head>
+<body>
+  <div id="mouseArea" style="width: 200px; height: 200px; background: lightgray;">Move here</div>
+  
+  <script>
+    const area = document.getElementById('mouseArea');
+
+    area.addEventListener('mouseup', (e)=>{
+        console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+<body>
+    <input type="text" name="" id="textInput" placeholder = "Type something">
+
+    <script>
+        // type, timestamp, defaultPrevented
+        // target, toElement, srcElement, currentTarget,
+        // clientX, clientY, screenX, screenY
+        // altkey, ctrlkey, shiftkey, keyCode
+
+        const input = document.getElementById('textInput');
+        
+        // input.addEventListener('keyup', (e) => {
+        //     console.log(`key Pressed: ${e.key}`);
+        //     console.log(`key Code: ${e.keyCode}`);
+        //     console.log(`key Code: ${e.code}`);
+        //     // console.log(e.location);
+        //     // console.log(e.repeat);
+        //     // console.log(e.numbers);
+        // });
+
+        input.addEventListener('keydown', (e) => {
+            console.log(`key Pressed: ${e.key}`);
+            console.log(`key Code: ${e.keyCode}`);
+            console.log(`key Code: ${e.code}`);
+            // console.log(e.location);
+            // console.log(e.repeat);
+            // console.log(e.numbers);
+        });
+    </script>
+</body>
+</html>

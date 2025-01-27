@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Event</title>
+</head>
+<body>
+    <button onclick="alert('You clicked me! Thank you')">Click Me</button>
+    <button id="btn">Click Now</button>
+    <button id="btn-one">Please Click</button>
+    <a id = "google" href="http://www.google.com">google</a>
+    <button id="reed">Reed more</button>
+
+    <script>
+        const button = document.getElementById('btn'); // selecting the button
+
+        button.addEventListener('click', () => {
+            alert('First event triggered');
+        });
+
+        button.addEventListener('click', () =>{
+            alert('Second event triggered');
+        });
+
+        const buttonOne = document.getElementById('btn-one');
+
+        buttonOne.addEventListener('click', function(e){
+            // convert to format like 2024-08-01 12:00:00 AM
+            const date = new Date(e.timeStamp);
+            console.log(date.toLocaleString());
+            dateFormat = date.toLocaleString();
+            alert('You clicked on me! ' + e.target.id + ' at ' + dateFormat);
+        });
+
+        const link = document.getElementById('google'); // selecting the link
+
+        link.addEventListener('click', function(e){
+            e.preventDefault(); // prevents default behaviour
+            alert('You clicked on the link');
+            console.log(e);
+        });
+
+        // reed more button
+        document.getElementById('reed').addEventListener('click', function(e){
+            console.log(e.type); // Logs the event type
+            console.log(e.target); // Logs the clicked element
+            console.log(e.clientX); // Logs the clicked element
+            console.log(e.clientY); // Logs the clicked element
+            alert(`You Clicked on: ${e.target.tagName}`); // Logs the clicked element
+            
+        });
+
+        
+
+    </script>
+</body>
+</html>
