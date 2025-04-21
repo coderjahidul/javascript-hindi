@@ -1,6 +1,7 @@
 /**
  * Project Requirements
  * - Change the background color by generating a random RGB color on button click
+ * - Also display the hex code to a disabled input field
  */
 
 // Step 1 - create onload handler
@@ -10,22 +11,24 @@ window.onload = () => {
 
 function main() {
     const root = document.getElementById('root');
-    const button = document.getElementById('change-color');
+    const button = document.getElementById('btn');
+    const output = document.getElementById('output');
 
-    button.addEventListener('click', function() {
-        const bgColor = generateRGBColor();
+    button.addEventListener('click', function(){
+        const bgColor = generateHexColor();
         root.style.backgroundColor = bgColor;
-        console.log(bgColor);
+        output.value = bgColor;
     });
+    
 }
 
 // Step 2 - random color generator function
-function generateRGBColor() {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
+function generateHexColor(){
+    const hex = Math.random().toString(16).substring(2, 8);
+    return `#${hex}`;
 }
+
+
 
 // Step 3 - collect all necessary elements
 
